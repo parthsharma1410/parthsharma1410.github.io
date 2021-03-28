@@ -14,13 +14,13 @@ body {
   font-family: montserrat;
   background: linear-gradient(
     to top left,
-    rgb(15, 125, 158),
-    rgb(54, 50, 102),
-    rgb(114, 49, 114)
+    rgb(17, 17, 17),
+    rgb(49, 133, 59),
+    rgb(31, 34, 31)
   );
 }
 nav {
-  background: #222020;
+  background: #1b1b1b;
   height: 80px;
   width: 100%;
 }
@@ -71,7 +71,7 @@ nav ul li a {
 
 a.active,
 a:hover {
-  background: #7d807d;
+  background: #384938;
   transition: 0.5s;
 }
 .checkbtn {
@@ -373,7 +373,7 @@ section {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
   animation: blink-caret 2s step-end infinite;
-  background-color: #432d52;
+  background-color: #223129;
   color: rgb(180, 179, 177);
 }
 
@@ -406,7 +406,7 @@ button {
   padding-bottom: 2%;
   border-radius: 40px;
   border-style: none;
-  background: #5765aa;
+  background: #83d355;
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
@@ -418,11 +418,11 @@ button:hover {
   transition: 1s;
 }
 
-button a{
+button a {
   text-decoration: none;
   color: white;
 }
 
-.btn:hover{
-  background: #5765aa;
+.btn:hover {
+  background: #b7e79a;
 }
