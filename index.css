@@ -1,0 +1,418 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: montserrat;
+  background: linear-gradient(
+    to top left,
+    rgb(15, 125, 158),
+    rgb(54, 50, 102),
+    rgb(114, 49, 114)
+  );
+}
+nav {
+  background: #222020;
+  height: 80px;
+  width: 100%;
+}
+
+.heading {
+  font-family: "Montserrat", sans-serif;
+  color: #c1c2c1;
+  font-size: 2.5rem;
+}
+
+label.logo {
+  color: rgb(198, 206, 201);
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: rgb(198, 214, 203);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.install {
+  height: 10%;
+  width: 120%;
+  background-color: #4d645b;
+  color: #fff;
+  border-radius: 20px;
+  border-style: none;
+}
+
+.install:hover {
+  border-radius: 10px;
+  transition: 1s;
+}
+
+a.active,
+a:hover {
+  background: #7d807d;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+#home {
+  display: flex;
+  width: 100%;
+}
+
+.para {
+  padding: 10%;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+img {
+  height: 40%;
+  width: 70%;
+}
+
+.flex {
+  display: flex;
+}
+
+@media (max-width: 952px) {
+  #home {
+    display: block;
+  }
+
+  .flex {
+    display: block;
+  }
+
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .wrapper {
+    margin: auto;
+    height: 90%;
+    width: 60%;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  .wrapper .card {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(49, 47, 47);
+    border-radius: 10px;
+    transform: translateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  }
+}
+@media (max-width: 858px) {
+  #home {
+    display: block;
+  }
+
+  .flex {
+    display: block;
+  }
+
+  nav {
+    background-color: rgb(52, 83, 49);
+  }
+
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .install {
+    height: 100%;
+    width: 100%;
+    background-color: #495751;
+    color: #fff;
+    border-radius: 20px;
+    border-style: none;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #4f884a;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .wrapper {
+    height: 0%;
+    width: 0%;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+}
+section {
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+::selection {
+  color: #fff;
+  background: #383a3a;
+}
+
+#about {
+  display: flex;
+}
+
+.wrapper {
+  height: 60%;
+  width: 40%;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.wrapper .card {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 5%;
+  background: rgb(26, 25, 25);
+  border-radius: 10px;
+  transform: translateY(0deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.wrapper:hover > .front-face {
+  transform: rotateY(-180deg);
+}
+.wrapper .card img {
+  height: 100%;
+  width: 85%;
+  padding: 5px;
+  border-radius: 20%;
+  background: white;
+}
+.wrapper .back-face {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  transform: rotateY(180deg);
+}
+.wrapper:hover > .back-face {
+  transform: rotateY(0deg);
+}
+.wrapper .back-face img {
+  height: 150px;
+  width: 150px;
+  padding: 5px;
+  border-radius: 50%;
+  background: rgb(41, 40, 40);
+}
+.wrapper .back-face .info {
+  text-align: center;
+  color: white;
+}
+.back-face .info .title {
+  font-size: 30px;
+  font-weight: 500;
+}
+.back-face ul {
+  display: flex;
+}
+.back-face ul a {
+  display: block;
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  margin: 0 5px;
+  line-height: 38px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background: linear-gradient(375deg, #1b1b1b, #5b5c5b);
+  transition: all 0.5s ease;
+}
+.back-face ul a:hover {
+  color: #4a4e4e;
+  border-color: #494f50;
+  background: linear-gradient(375deg, transparent, transparent);
+}
+
+@media (max-width: 1073px) {
+  #about {
+    display: block;
+  }
+  .wrapper {
+    height: 90%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  .wrapper .card {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+    background: rgb(39, 38, 38);
+    border-radius: 10px;
+    transform: translateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  }
+}
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  color: rgb(52, 83, 49);
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: blink-caret 2s step-end infinite;
+  background-color: #432d52;
+  color: rgb(180, 179, 177);
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(26, 25, 25);
+  }
+}
+
+button {
+  margin-left: 32%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 40px;
+  border-style: none;
+  background: #5765aa;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+  border-radius: 0px;
+  transition: 1s;
+}
