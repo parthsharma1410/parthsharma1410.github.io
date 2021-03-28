@@ -398,7 +398,7 @@ section {
   }
 }
 
-.btn {
+button {
   margin-left: 32%;
   padding-left: 10%;
   padding-right: 10%;
@@ -412,7 +412,7 @@ section {
   font-size: 1.5rem;
 }
 
-.btn:hover {
+button:hover {
   cursor: pointer;
   border-radius: 0px;
   transition: 1s;
