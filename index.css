@@ -373,7 +373,7 @@ section {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
   animation: blink-caret 2s step-end infinite;
-  background-color: #223129;
+  background-color: #1b201d;
   color: rgb(180, 179, 177);
 }
 
@@ -394,7 +394,7 @@ section {
     border-color: transparent;
   }
   50% {
-    border-color: rgb(26, 25, 25);
+    border-color: rgb(32, 28, 28);
   }
 }
 
