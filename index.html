@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SecureX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Quicksand:wght@500&display=swap" rel="stylesheet">  
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  
+   <!-- <script src="index.js"></script> -->
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">SecureX</label>
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Install</a></li>
+     <!--   <li><a href="#">Services</a></li>
+        <li><a href="#">Feedback</a></li> -->
+      </ul>
+    </nav>
+    <section id="home">
+        <div class="para animate__animated animate__fadeInLeft">
+          <div>
+            <h1 class="heading">This is SecureX</h1><br><br><br>
+          </div>
+          <div class="typewriter">
+            <h1>Now you can store your private <br> info on a decentralized network</h1>
+          </div>
+          <br>
+          <div class="typewriter">
+            <h1>Only way to access your <br> information will be through <br> a cryptographic hash</h1>
+          </div>
+          <br>
+          <div class="typewriter">
+            <h1>retrieve your data in <br> case you lose or damage your phone.</h1>
+          </div>
+          <br>
+          <div class="typewriter">
+            <h1>Secured by Blockchain technology</h1>
+          </div>
+        </div>
+        <div class="para animate__animated animate__fadeInRight">
+          <!--  <h1 class="heading">Download our app now! :) </h1> <br><br><br>
+            <button class="install">Click to install</button>
+          </div> -->
+          <img src="./img/lock.png" alt="lock" style="height: 70%; filter: invert(100%);"> <br><br>
+          <div class="flex">
+            <h2 class="heading" style="margin-left: 33%;">SecureX</h2>
+          </div>
+            </div>
+
+    </section>
+    <section id="about"> 
+        <div class="wrapper">
+            <div class="card front-face" style="width: 80%; margin-left: 10%;">
+              <i class="fab fa-ethereum" style="font-size:3rem;color:rgb(255, 255, 255); margin-top: 45%; margin-left: 15%;">Ethereum</i>
+            </div>
+      <div class="card back-face" style="width: 80%; margin-left: 10%;">
+              <img src="./img/card1.PNG" style="width: 35%;">
+              <div class="info">
+                <div class="title">
+      Ethereum</div> <br>
+      <p>
+        The cryptographic hash is stored on the Ethereum network using Web3j by interaction through a smart contract.</p>
+      </div>
+      </div>
+      </div>
+      <div class="wrapper">
+        <div class="card front-face" style="width: 75%; margin-left: 5%; ">
+          <i class="fas fa-cube" style="font-size:3rem;color:rgb(255, 255, 255); margin-top: 50%; margin-left: 25%;">IPFS</i>
+        </div>
+  <div class="card back-face" style="width: 75%; margin-left: 5%;">
+          <img src="./img/card2.PNG" style="width: 35%;">
+          <div class="info">
+            <div class="title">
+  IPFS</div> <br>
+  <p>
+    Store credentials on IPFS which is a peer to peer decentralized file storage system.
+</p>
+  </div>
+  </div>
+  </div>
+  <div class="wrapper">
+    <div class="card front-face" style="width: 80%;">
+      <i class="fas fa-hashtag" style="font-size:3rem;color:rgb(255, 255, 255); margin-top: 48%; margin-left: 25%;">Hash</i>
+    </div>
+<div class="card back-face" style="width: 80%;">
+      <img src="./img/card3.PNG" style="width: 35%;">
+      <div class="info">
+        <div class="title">
+Hash</div> <br>
+<p>
+  Every time user adds a credential, a cryptographic hash is generated for that specific set of credentials. On adding another set of credentials, the previous hash is destroyed and a new hash is generated which only you can know.
+
+</p>
+</div>
+</div>
+</div>
+<div class="wrapper">
+  <div class="card front-face" style="width: 80%;">
+    <i class="fas fa-mobile-alt" style="font-size:3rem;color:rgb(255, 255, 255); margin-top: 48%; margin-left: 15%;">Clean UI</i>
+  </div>
+<div class="card back-face" style="width: 80%;">
+    <img src="./img/card4.PNG" style="width: 35%;">
+    <div class="info">
+      <div class="title">
+Clean UI</div> <br>
+<p>
+  A minimalistic UI that focuses only on the functionality and no extra stuff to confuse the user.
+</p>
+</div>
+</div>
+</div>
+    </section>
+    <section id="ss">
+      <style>
+        * {
+          box-sizing: content-box;
+        }
+        body {
+          font-family: Verdana, sans-serif;
+          margin: 0
+        }
+        .mySlides {
+          display: none
+        }
+        img {
+          vertical-align: middle;
+        }
+        .slideshow-container {
+          max-width: 50%;
+          position: relative;
+          margin: auto;
+        }
+        /* Next & previous buttons */
+        .prev,
+        .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+        /* Caption text */
+        .text {
+          color: #ffffff;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #ffffff;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #999999;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        .active,
+        .dot:hover {
+          background-color: #111111;
+        }
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        @-webkit-keyframes fade {
+          from {
+            opacity: .4
+          }
+          to {
+            opacity: 1
+          }
+        }
+        @keyframes fade {
+          from {
+            opacity: .4
+          }
+          to {
+            opacity: 1
+          }
+        }
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev,
+          .next,
+          .text {
+            font-size: 11px
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <h2 class="heading" style="margin-left: 32%;margin-bottom: 5%;">Screenshots from the app</h2>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="./img/ss1.PNG" style="width:30%; height: 10%; margin-left:255px;">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="./img/ss2.PNG" style="width:30%; height: 10%; margin-left:255px;">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="./img/ss3.PNG" style="width:30%; height: 10%; margin-left:255px;">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="./img/ss4.PNG" style="width:30%; height: 10%; margin-left:255px;">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if(n > slides.length) {
+            slideIndex = 1
+          }
+          if(n < 1) {
+            slideIndex = slides.length
+          }
+          for(i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for(i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+      </script>
+    </section>
+    <section id="tech-stack">
+      <h3 class="heading" style="margin-left: 42%; margin-top: 10%;">Tech Stack</h3>
+      <div class="flex">
+        <img src="./img/kotlin.png" alt="" style="height: 20%; width: 10%; margin-top: 10%; margin-left: 20%;">
+        <img src="./img/solidity.png" alt="" style="height: 10%; width: 5%; margin-top: 10%; margin-left: 5%;">
+        <img src="./img/web3j.png" alt="" style="height: 20%; width: 5%; margin-top: 10%; margin-left: 5%;">
+        <img src="./img/infura.png" alt="" style="height: 20%; width: 10%; margin-top: 9%; margin-left: 5%;">
+        <img src="./img/ethereum.png" alt="" style="height: 20%; width: 9%; margin-top: 10%; margin-left: 5%; filter: invert(100%);">
+      </div>
+    </section>
+    <section id="contact">
+      <button><a href="https://github.com/Ishan-001/Hacko-41-Bareilly-ki-Barfi/blob/master/app-release.apk"></a>Download Now</button>
+    </section>
+  </body>
+</html>
