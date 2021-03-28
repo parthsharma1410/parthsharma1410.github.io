@@ -417,3 +417,7 @@ button:hover {
   border-radius: 0px;
   transition: 1s;
 }
+
+button a{
+  text-decoration: none;
+  color: white;
