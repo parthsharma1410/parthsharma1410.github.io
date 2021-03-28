@@ -423,6 +423,6 @@ button a{
   color: white;
 }
 
-button a:hover{
+.btn:hover{
   background: #5765aa;
 }
