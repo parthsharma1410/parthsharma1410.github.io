@@ -422,3 +422,7 @@ button a{
   text-decoration: none;
   color: white;
 }
+
+button a:hover{
+  background: #5765aa;
+}
